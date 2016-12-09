@@ -1,0 +1,5 @@
+*.pyc
+pix2pix*
+checkpoint
+samples/BtoA
+datasets/facades
