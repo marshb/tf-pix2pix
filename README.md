@@ -10,3 +10,8 @@ Results for facades (facade --> groundtruth --> generation)
 ![](samples/sample_8000_6.jpg)
 ![](samples/sample_8000_7.jpg)
 ![](samples/sample_8000_8.jpg)
+
+credit to 
+
+1. https://github.com/phillipi/pix2pix
+2. https://github.com/yenchenlin/pix2pix-tensorflow
