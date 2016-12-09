@@ -56,7 +56,7 @@ def train(args, sess):
 
             if iter_counter % print_freq == 0:
                 time_now = datetime.now()
-                time_tag = '[%02d.%02d.%02d]' % (time_now.hour, time_now.minute, time_now.second)
+                time_tag = '[%02d.%02d.%02d]' % (time_now.hour, time_now.minute, time_now.second
                 print time_tag + " epoch %3d, iter %d, errD: %.7f, errG: %.7f, errL1: %.7f" % (k, iter_counter, np.mean(d_err_list[-print_freq:]), np.mean(g_err_list[-print_freq:]), np.mean(l1_err_list[-print_freq:]))
 
             if iter_counter % disp_freq == 0:
@@ -74,10 +74,6 @@ def train(args, sess):
 
 
 def main(argv):
-#    time_now = datetime.now()
-#    global time_tag
-#    time_tag = '%02d.%02d.%02d' % (time_now.hour, time_now.minute, time_now.second)
-
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset_name', default='facades')
     parser.add_argument('--batch_size', default=10, type=int)
